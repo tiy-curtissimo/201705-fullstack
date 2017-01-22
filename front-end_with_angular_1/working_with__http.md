@@ -32,7 +32,7 @@ Since the early 2000s, almost every ECMAscript library has provided an
 abstraction over `XMLHttpRequest` to ease its use by developers, the most
 popular being jQuery's `$.ajax` API. Angular 1 is no different.
 
-## `$http`: The Angular AJAX Service
+## The Angular AJAX Service
 
 The essence of `$http` is to make your life easier when making AJAX
 requests. Compare this use of `XMLHttpRequest`
