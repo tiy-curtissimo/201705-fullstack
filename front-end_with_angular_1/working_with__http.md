@@ -35,7 +35,4 @@ popular being jQuery's `$.ajax` API. Angular 1 is no different.
 ## $http: The AJAX Angular Service
 
 
-
-
-
 [^1] ["Article on the history of XMLHTTP by an original developer"](http://www.alexhopmann.com/xmlhttp.htm). Alexhopmann.com. 2007-01-31.
