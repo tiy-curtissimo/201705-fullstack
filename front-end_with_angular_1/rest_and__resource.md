@@ -21,7 +21,7 @@ recently worked with the group defining the HypterText Transfer Protocol 1.1,
 he had spent a lot of time thinking about how to build applications using an
 infrastructure similar to the World Wide Web. His dissertation,
 "Architectural Styles and the Design of Network-based Software Architectures"[^1]
-provided a description of an ideal application architecture for distributed
+provides a description of an ideal application architecture for distributed
 systems that have an unknown number of intermediary caching nodes and
 unreliable network connectivity.
 
