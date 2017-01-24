@@ -13,7 +13,7 @@ token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoxMjc5NiwiY29udGVu
 title: >-
   Creating a Custom Service
 description: >-
-  Create an Angular 1 service that provides access to localStorage.
+  Create an Angular 1 service that provides access to local and session storages.
 ---
 
 In this assignment, we will create a service that allows our Angular
