@@ -23,6 +23,9 @@ store non-sensitive information in the appropriate kind of storage,
 depending on how long our application would like to maintain the data,
 during the current user's browser session or over many browser sessions.
 
+Your job is to modify the `storage/storage.service.js` file to make the
+UI work.
+
 ## Set Up
 
 You have a choice on how to start this exercise:
@@ -43,16 +46,17 @@ __index.html__
     <title>Storage builder</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
   </head>
-  <body>
-    <div ng-controller="DemoController">
+  <body ng-controller="DemoController">
+    <header>
+      <h1>Storage Service Demonstration</h1>
       <div id="storage-options">
         <form class="pure-form" novalidate ng-submit="saveKeyValuePair()">
           <label class="pure-checkbox">
-            <input ng-model="storageType" type="checkbox" value="local">
+            <input ng-model="storageType" type="radio" value="local">
             Use local storage.
           </label>
           <label class="pure-checkbox">
-            <input ng-model="storageType" type="checkbox" value="session">
+            <input ng-model="storageType" type="radio" value="session">
             Use session storage.
           </label>
           <fieldset>
@@ -63,9 +67,45 @@ __index.html__
           </fieldset>
         </form>
       </div>
-    </div>
+    </header>
+    <main>
+      <fieldset>
+        <legend>Local storage</legend>
+        <table class="pure-table">
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="keyValue in localKeyValues">
+              <td>{{keyValue.key}}</td>
+              <td>{{keyValue.value}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Session storage</legend>
+        <table class="pure-table">
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="keyValue in sessionKeyValues">
+              <td>{{keyValue.key}}</td>
+              <td>{{keyValue.value}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> 
+    <script src="angular-1.6.1.min.js"></script> 
     <script src="app.module.js"></script>
     <script src="storage/storage.module.js"></script>
     <script src="storage/storage.service.js"></script>
@@ -95,10 +135,15 @@ __storage/storage.service__
 (function () {
   angular
     .module('storage')
-    .factory('storage', ['$window', storageService);
+    .factory('storage', ['$window', storageService]);
   
   function storageService($window) {
-    // return implementation, here.
+
+    /********************************
+     * YOUR IMPLEMENTATION HERE
+     */
+    return {}; // REPLACE THIS RETURN WITH YOUR STUFF
+
   }
 })();
 ```
@@ -112,11 +157,17 @@ __demo.controller.js__
   
   function DemoController($scope, storage) {
     $scope.storageType = 'local';
+    $scope.localKeyValues = storage.for('local').getAll();
+    $scope.sessionKeyValues = storage.for('session').getAll();
 
     $scope.saveKeyValuePair = function () {
       var vault = storage.for($scope.storageType);
-      vault.setItem($scope.key, $scope.value);
+      vault.set($scope.key, $scope.value);
+      
+      $scope.localKeyValues = storage.for('local').getAll();
+      $scope.sessionKeyValues = storage.for('session').getAll();
     };
+
   }
 })();
 ```
