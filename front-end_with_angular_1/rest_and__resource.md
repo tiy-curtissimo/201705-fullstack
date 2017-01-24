@@ -188,4 +188,8 @@ angular
   }]);
 ```
 
+The newest standard of JavaScript has the Promise object built into it. It
+only makes sense, then, that we return Promises from our services, where
+appropriate. 
+
 [^1]: [Architectural Styles and the Design of Network-based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm). Dr. Roy T. Fielding. 2000.
