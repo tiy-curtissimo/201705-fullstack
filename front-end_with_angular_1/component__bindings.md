@@ -32,7 +32,7 @@ name, a last name, and an email address. It will look like this.
 
 <form class="pure-form">
   <fieldset>
-        <legend>User Information</legend>
+        <legend>The User Widget</legend>
 
         <div class="pure-g">
           <div class="pure-u-1 pure-u-md-1-3">
@@ -45,12 +45,13 @@ name, a last name, and an email address. It will look like this.
             <input type="email" placeholder="Email" class="pure-u-23-24">
           </div>
         </div>
+        <button type="submit" class="pure-button pure-button-primary">Create this user</button>
     </fieldset>
 </form>
 
 Because our components act like custom HTML elements, that is, custom HTML tags,
-it carries forward that metaphor by passing data to the component through
-attributes on the tag in the HTML that we write. 
+Angular carries forward that metaphor by passing data to the component through
+attributes on the tag in the HTML that we write. This means, that 
 
 ## Simple Strings
 
