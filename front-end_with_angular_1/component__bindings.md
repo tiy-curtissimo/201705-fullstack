@@ -34,13 +34,13 @@ name, a last name, and an email address. It will look like this.
 
         <div class="pure-g">
           <div class="pure-u-1 pure-u-md-1-3">
-            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="First Name" class="pure-u-23-24">
           </div>
           <div class="pure-u-1 pure-u-md-1-3">
-            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Last Name" class="pure-u-23-24">
           </div>
           <div class="pure-u-1 pure-u-md-1-3">
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email" class="pure-u-23-24">
           </div>
         </div>
     </fieldset>
