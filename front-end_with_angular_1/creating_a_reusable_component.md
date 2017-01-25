@@ -33,6 +33,52 @@ We will need two components:
 
 ## Directions
 
-Create a component that passes some data into another component through an
-attribute binding. Then, on some event in the child component, have it pass
-information back to the parent component using an output binding.
+In your `src/index.html`, put the following use a component in the `<main>` tag like
+this.
+
+```html
+<main>
+  <parenting-is-hard></parenting-is-hard>
+</main>
+```
+
+Now, create the following files for that component:
+
+* `src/parenting-is-hard.component.js`
+* `src/parenting-is-hard.template.html`
+
+In `src/parenting-is-hard.template.html`, put the following HTML.
+
+```html
+<childhood-is-fun info="parent.child" on-provoked="parent.worry($event)"></childhood-is-fun>
+```
+
+In the `src/parenting-is-hard.component.js` file, declare the component and, in
+its `$onInit` method, put the following code.
+
+```javascript
+// ES2015 with a class
+$onInit() {
+  this.child = { age: 4, disposition: 'sunny' };
+}
+
+// ES5 with just a function
+this.$onInit = function () {
+  this.child = { age: 4, disposition: 'sunny' };
+}
+```
+
+That will get bound into the child template.
+
+Now, create the following files for that component:
+
+* `src/childhood-is-fun.component.js`
+* `src/childhood-is-fun.template.html`
+
+In the component file, declare the component and make sure to declare its input
+and output bindings. Then, in the HTML template, show the information passed in
+through the `info` binding and figure out a way to allow the user to trigger the
+`onProvoked` output binding.
+
+Finally, include these four files in your `index.html`. Run it and profit from
+your newly-found knowledge
