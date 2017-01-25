@@ -28,7 +28,15 @@ describes each of those types of bindings and gives advice about their use.
 
 In this lesson, we sill write a component that shows a small form which allows
 us to create or edit a user for our system. It will allow us to specify a first
-name, a last name, and an email address. It will look like this.
+name, a last name, and an email address.
+
+The markup that we will use in our HTML templates will look like this.
+
+```html
+<todo-form ...></todo-form>
+```
+
+The actual component will render like this.
 
 <form class="pure-form">
   <fieldset>
@@ -51,9 +59,29 @@ name, a last name, and an email address. It will look like this.
     </fieldset>
 </form>
 
+# Getting Data Into the Component
+
 Because our components act like custom HTML elements, that is, custom HTML tags,
 Angular carries forward that metaphor by passing data to the component through
-attributes on the tag in the HTML that we write. This means, that 
+attributes on the tag in the HTML that we write. This means, that we can pass
+through to the component information through attributes we define. The next few
+sections show how to pass information in.
 
 ## Simple Strings
+
+We have three text fields in our component. We can provide attributes on the
+component that provide information to each of those components. The markup that
+we'd use with the component could look like this, for example.
+
+[callout-info]
+Please note that the line breaks and the white space in the format of the tag
+below is only to make it look better on this page. In your source code, you
+do not have to put the line breaks.
+[/callout-info]
+
+```html
+<todo-form first-name="Jack"
+           last-name="Long"
+           email="jack@long.info"></todo-form>
+```
 
