@@ -45,7 +45,11 @@ name, a last name, and an email address. It will look like this.
             <input type="email" placeholder="Email" class="pure-u-23-24">
           </div>
         </div>
-        <button type="submit" class="pure-button pure-button-primary">Create this user</button>
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-3">
+            <button type="submit" class="pure-button pure-button-primary">Create this user</button>
+          </div>
+        </div>
     </fieldset>
 </form>
 
