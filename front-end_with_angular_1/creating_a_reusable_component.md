@@ -35,4 +35,4 @@ We will need two components:
 
 Create a component that passes some data into another component through an
 attribute binding. Then, on some event in the child component, have it pass
-information back to the parent component.
+information back to the parent component using an output binding.
