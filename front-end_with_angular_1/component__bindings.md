@@ -35,18 +35,16 @@ name, a last name, and an email address. It will look like this.
         <legend>The User Widget</legend>
 
         <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-3">
+          <div class="pure-u-1 pure-u-md-1-4">
             <input type="text" placeholder="First Name" class="pure-u-23-24">
           </div>
-          <div class="pure-u-1 pure-u-md-1-3">
+          <div class="pure-u-1 pure-u-md-1-4">
             <input type="text" placeholder="Last Name" class="pure-u-23-24">
           </div>
-          <div class="pure-u-1 pure-u-md-1-3">
+          <div class="pure-u-1 pure-u-md-1-4">
             <input type="email" placeholder="Email" class="pure-u-23-24">
           </div>
-        </div>
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-3">
+          <div class="pure-u-1 pure-u-md-1-4">
             <button type="submit" class="pure-button pure-button-primary">Create this user</button>
           </div>
         </div>
