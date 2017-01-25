@@ -32,9 +32,17 @@ name, a last name, and an email address. It will look like this.
   <fieldset>
         <legend>User Information</legend>
 
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="email" placeholder="Email">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-3">
+            <input type="text" placeholder="First Name">
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3">
+            <input type="text" placeholder="Last Name">
+          </div>
+          <div class="pure-u-1 pure-u-md-1-3">
+            <input type="email" placeholder="Email">
+          </div>
+        </div>
     </fieldset>
 </form>
 
