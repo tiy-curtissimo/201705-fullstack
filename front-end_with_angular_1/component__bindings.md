@@ -17,6 +17,8 @@ description: >-
 ---
 
 <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+
 
 The last thing that we want are *boring* components. Angular 1 provides a way
 for us to pass data into a component as well as sending data out. This lesson
