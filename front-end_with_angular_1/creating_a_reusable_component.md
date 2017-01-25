@@ -20,9 +20,9 @@ Now that we know *everything* there is to know about components in Angular 1,
 it's time to write one!
 
 [callout-info]
-If you need to, download the starter kit template, again, from GitHub. The page
-for that is at
-[https://github.com/tiy-curtissimo/angular-starter](https://github.com/tiy-curtissimo/angular-starter).
+If you need to, download the starter kit template, again, from GitHub.
+
+- [https://github.com/tiy-curtissimo/angular-starter](https://github.com/tiy-curtissimo/angular-starter).
 [/callout-info]
 
 We will need two components:
@@ -33,8 +33,8 @@ We will need two components:
 
 ## Directions
 
-In your `src/index.html`, put the following use a component in the `<main>` tag like
-this.
+In your `src/index.html`, put the following use of our soon-to-be-created parent
+component in the `<main>` tag like this.
 
 ```html
 <main>
@@ -53,8 +53,9 @@ In `src/parenting-is-hard.template.html`, put the following HTML.
 <childhood-is-fun info="parent.child" on-provoked="parent.worry($event)"></childhood-is-fun>
 ```
 
-In the `src/parenting-is-hard.component.js` file, declare the component and, in
-its `$onInit` method, put the following code.
+In the `src/parenting-is-hard.component.js` file, declare the component, set it
+to use the HTML template, create a controller alias, and assign a controller.
+In the `$onInit` method of the controller, put the following code.
 
 ```javascript
 // ES2015 with a class
@@ -75,10 +76,11 @@ Now, create the following files for that component:
 * `src/childhood-is-fun.component.js`
 * `src/childhood-is-fun.template.html`
 
-In the component file, declare the component and make sure to declare its input
-and output bindings. Then, in the HTML template, show the information passed in
-through the `info` binding and figure out a way to allow the user to trigger the
-`onProvoked` output binding.
+In the component file, declare the component, set it to use the HTML template,
+create a controller alias, create a controller, and make sure to declare its
+input and output bindings. Then, in the HTML template, show the information
+passed in through the `info` binding and figure out a way to allow the user to
+trigger the `onProvoked` output binding.
 
 Finally, include these four files in your `index.html`. Run it and profit from
 your newly-found knowledge
