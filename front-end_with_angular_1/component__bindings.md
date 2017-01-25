@@ -62,10 +62,12 @@ styling in it. I've not included the CSS stuff so that we can focus on how the
 bindings works rather than the presentation.
 
 ```html
-<input type="text" placeholder="First Name">
-<input type="text" placeholder="Last Name">
-<input type="email" placeholder="Email">
-<button type="submit">Create this user</button>
+<form>
+  <input type="text" placeholder="First Name">
+  <input type="text" placeholder="Last Name">
+  <input type="email" placeholder="Email">
+  <button type="submit">Create this user</button>
+</form>
 ```
 
 Finally, the component will render something like this in the browser.
@@ -142,10 +144,12 @@ bind each of those input bindings to our `input` tags using the `ngModel`
 directive. That changes our template to look like this.
 
 ```html
-<input type="text" placeholder="First Name" ng-model="form.firstName">
-<input type="text" placeholder="Last Name" ng-model="form.lastName">
-<input type="email" placeholder="Email" ng-model="form.email">
-<button type="submit">Create this user</button>
+<form>
+  <input type="text" placeholder="First Name" ng-model="form.firstName">
+  <input type="text" placeholder="Last Name" ng-model="form.lastName">
+  <input type="email" placeholder="Email" ng-model="form.email">
+  <button type="submit">Create this user</button>
+</form>
 ```
 
 That's all it takes to get simple scalar data to flow into our component.
@@ -187,10 +191,12 @@ Finally, we need to update the model bindings in `user-form.template.html` to
 reflect those changes.
 
 ```html
-<input type="text" placeholder="First Name" ng-model="form.user.firstName">
-<input type="text" placeholder="Last Name" ng-model="form.user.lastName">
-<input type="email" placeholder="Email" ng-model="form.user.email">
-<button type="submit">Create this user</button>
+<form>
+  <input type="text" placeholder="First Name" ng-model="form.user.firstName">
+  <input type="text" placeholder="Last Name" ng-model="form.user.lastName">
+  <input type="email" placeholder="Email" ng-model="form.user.email">
+  <button type="submit">Create this user</button>
+</form>
 ```
 
 Now, it all works, again.
@@ -227,3 +233,56 @@ symbol like this.
 
 ## Output Binding
 
+This is the neatest trick of all. Angular 1 uses the event hook metaphor to
+simulate output bindings. Now that we have a form, let's hook up an even that
+will fire when the user submits the `form` in our component.
+
+In our component's template, we update the HTML to capture the `submit` event
+and have our component do something with it.
+
+```html
+<form ng-submit="form.handleSubmit()">
+  <input type="text" placeholder="First Name" ng-model="form.user.firstName">
+  <input type="text" placeholder="Last Name" ng-model="form.user.lastName">
+  <input type="email" placeholder="Email" ng-model="form.user.email">
+  <button type="submit">Create this user</button>
+</form>
+```
+
+Now, we need to create that `handleSubmit` in our component, as well as an
+output binding. We specify the output binding which we will call `onSubmit` by
+using the "&" symbol. Now, when the user submits the form, it will call the
+`handleSubmit` method on the controller which, in turn, creates an Angular event
+for the output binding, and fires the `onSubmit` event.
+
+```javascript
+  class UserFormController {
+    handleSubmit() {
+      var angularEvent = { $event: this.user };
+      this.onSubmit(angularEvent);
+    }
+  }
+
+  function factory() { return new UserFormController(); }
+
+  angular
+    .module('user')
+    .component('userForm', {
+      template: 'user/user-form.template.html',
+      controller: factory,
+      controllerAs: 'form'
+      bindings: {
+        user:     '=',
+        onSubmit: '&'
+      }
+    });
+```
+
+The consuming component would modify its usage of the `user-form` element like
+this, now.
+
+```html
+<user-form user="userInfo" on-submit="handleSubmit($event)"></user-form>
+```
+
+And, now, the world works nicely.
