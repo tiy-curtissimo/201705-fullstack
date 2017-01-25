@@ -36,7 +36,39 @@ The markup that we will use in our HTML templates will look like this.
 <todo-form ...></todo-form>
 ```
 
-The actual component will render like this.
+The component definition that we'll use in `todo-form.component.js` will look
+like this.
+
+```javascript
+(function () {
+  class TodoFormController {
+  }
+
+  function factory() { return new TodoFormController(); }
+
+  angular
+    .module('todo')
+    .component('todoForm', {
+      template: 'todo/todo-form.template.html',
+      controller: factory,
+      controllerAs: 'form'
+      bindings: { /* We will put stuff here. */ }
+    });
+})();
+```
+
+The HTML template in `todo-form.template.html` will look like this with more
+styling in it. I've not included the CSS stuff so that we can focus on how the
+bindings works rather than the presentation.
+
+```html
+<input type="text" placeholder="First Name">
+<input type="text" placeholder="Last Name">
+<input type="email" placeholder="Email">
+<button type="submit">Create this user</button>
+```
+
+Finally, the component will render something like this in the browser.
 
 <form class="pure-form">
   <fieldset>
@@ -76,7 +108,7 @@ we'd use with the component could look like this, for example.
 [callout-info]
 Please note that the line breaks and the white space in the format of the tag
 below is only to make it look better on this page. In your source code, you
-do not have to put the line breaks.
+do not have to use line breaks to make the data binding work.
 [/callout-info]
 
 ```html
@@ -85,3 +117,33 @@ do not have to put the line breaks.
            email="jack@long.info"></todo-form>
 ```
 
+Now that we know what it'll look like, let's create bindings. In the
+`todo-form.component.js` file, let's add the one-way, string bindings for those
+attributes.
+
+```javascript
+  angular
+    .module('todo')
+    .component('todoForm', {
+      template: 'todo/todo-form.template.html',
+      controller: factory,
+      controllerAs: 'form'
+      bindings: {
+        firstName: '@',
+        lastName:  '@',
+        email:     '@'
+      }
+    });
+```
+
+Each of those '@' symbols means that Angular will look for an attribute on the
+component and bring in that value. Now, all we need to do to get it to work is
+bind each of those input bindings to our `input` tags using the `ngModel`
+directive. That changes our template to look like this.
+
+```html
+<input type="text" placeholder="First Name" ng-model="form.firstName">
+<input type="text" placeholder="Last Name" ng-model="form.lastName">
+<input type="email" placeholder="Email" ng-model="form.email">
+<button type="submit">Create this user</button>
+```
