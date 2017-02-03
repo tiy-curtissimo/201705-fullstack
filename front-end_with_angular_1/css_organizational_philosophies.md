@@ -16,6 +16,8 @@ description: >-
   An overview and links to resources regarding BEM and SMACSS.
 ---
 
+# Some Extra information (You won't be tested on it. Here.)
+
 In an execution environment like the browser where styling rules can easily
 conflict in a large application, guidelines for declaring CSS rules based on
 selectors of tag names, ids, and class names have become a necessity to promote
