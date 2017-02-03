@@ -92,7 +92,7 @@ could interact with URLs that provide a Web service for interacting with
 | /invoices/1172 | DELETE | Delete the invoice                        |
 
 
-## The Angular RESTful Service
+## The Angular RESTful Client
 
 That brings us to the `$resource` service, Angular's attempt at making your
 interactions with RESTful services easier than eating pie. Because "all"
@@ -190,6 +190,6 @@ angular
 
 The newest standard of JavaScript has the Promise object built into it. It
 only makes sense, then, that we return Promises from our services, where
-appropriate. 
+appropriate.
 
 [^1]: [Architectural Styles and the Design of Network-based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm). Dr. Roy T. Fielding. 2000.
