@@ -34,12 +34,11 @@ provides single-level highly-targeted rules to style elements.
 
 The Block Element Modifier syntax manifests itself in the following manner.
 
-```css
-.«block»
-.«block»__«element»
-.«block»--«modifier»
-.«block»__«element»--«modifier»
-```
+<pre class="highlight css"><span class="highlight-copy-clipboard hint--left hint--rounded hint--no-animate" data-hint="Copy Code"></span><code><span class="o">.</span><i><span class="nt">block</span></i>
+<span class="o">.</span><i><span class="nt">block</span></i><span class="nt">__</span><i><span class="nt">element</span></i>
+<span class="o">.</span><i><span class="nt">block</span></i><span class="nt">--</span><i><span class="nt">modifier</span></i>
+<span class="o">.</span><i><span class="nt">block</span></i><span class="nt">__</span><i><span class="nt">element</span></i><span class="nt">--</span><i><span class="nt">modifier</span></i>
+</code></pre>
 
 We substitute into «block» the semantic name of the block, like "header" or
 "employee-card". If there's an HTML element in the block, we can further specify
