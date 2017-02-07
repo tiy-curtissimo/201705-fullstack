@@ -17,9 +17,9 @@ description: >-
 ---
 
 Dependency Injection (DI) is probably one of the most dead simple implementation
-choices I know but also one of the most difficult to explain, as well. I think
-one of the reasons for the difficulty with explaining DI is partly due to the
-nonsense examples used in most introductions you find on the Web.
+choices I know but also one of the most difficult to explain, as well. I hope
+this accessible example provides insight to you about the architectural
+decision to use DI in your application.
 
 ## An Example
 
