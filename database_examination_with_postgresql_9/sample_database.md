@@ -21,5 +21,5 @@ description: >-
 It's no fun to make a database from scratch. So, let's download this database to
 use during our exploration of databases.
 
-[Sample DVD Rental Database](http://bit.ly/2dnqtnr) shamelessly stolen from
+[Sample DVD Rental Database](http://bit.ly/2l0hg6P) shamelessly stolen from
 http://www.postgresqltutorial.com.
