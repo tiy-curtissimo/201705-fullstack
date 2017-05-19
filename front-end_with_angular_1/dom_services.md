@@ -7,7 +7,7 @@
 
 # Begin the body of the lesson below the final `---`.
 
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyMTQ5OCwiY29udGVudF90eXBlIjoiTGVzc29uIn0.l76h7sNsDpK2T7mVIHxc9PNucoPp7AbSrjvThqqcmqo
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyNzUyNywiY29udGVudF90eXBlIjoiTGVzc29uIn0.DG506E3E2ZX8yLEm-0dhOScZRgCbVnoyl48PdcbQvYI
 
 # Everything below this line can be edited.
 title: >-

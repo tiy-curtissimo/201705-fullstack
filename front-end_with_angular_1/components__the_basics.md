@@ -7,7 +7,7 @@
 
 # Begin the body of the lesson below the final `---`.
 
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyMTk3MSwiY29udGVudF90eXBlIjoiTGVzc29uIn0.-9h3TrhvMR66MjQ_XwylkyqSOwFWjzR8mJLPwTcWQBs
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyNzUzMCwiY29udGVudF90eXBlIjoiTGVzc29uIn0.DgTz5CaBqZf0puCdafDdKC9_zgFFWYluFvWQzE8otLc
 
 # Everything below this line can be edited.
 title: >-
@@ -23,7 +23,7 @@ documentation about components.
 > * simpler configuration than plain directives
 > * promote sane defaults and best practices
 > * writing component directives will make it easier to upgrade to Angular 2
-> 
+>
 > When not to use Components:
 > * for directives that need to perform actions in compile and pre-link
 >   functions, because they aren't available

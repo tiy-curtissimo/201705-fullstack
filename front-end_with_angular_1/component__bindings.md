@@ -7,9 +7,8 @@
 
 # Begin the body of the lesson below the final `---`.
 
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyMTk3MiwiY29udGVudF90eXBlIjoiTGVzc29uIn0.Cb9TGUNIorZ04v5t6At-1IV7D0yCrmYKOAP6JVEW2RQ
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyNzUzMSwiY29udGVudF90eXBlIjoiTGVzc29uIn0.ZabKqaYlP2qM9NDyErWd2CQfkCOLkfQJmat6jbK_yig
 
-# Everything below this line can be edited.
 title: >-
   Component: Bindings
 description: >-

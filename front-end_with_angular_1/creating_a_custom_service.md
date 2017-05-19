@@ -7,7 +7,7 @@
 
 # Begin the body of the assignment below the final `---`.
 
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoxMjc5NiwiY29udGVudF90eXBlIjoiQXNzaWdubWVudCJ9.iTlqjgY2NDkfDqKL9dVpHbsG2fx1Od9Pan9oGncBMNY
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyNzUyOCwiY29udGVudF90eXBlIjoiTGVzc29uIn0.ZYVXY0Ck6rqgDXsQ2b_dNe1W-OZVRHVJh1By1907Om0
 
 # Everything below this line can be edited.
 title: >-
@@ -105,7 +105,7 @@ __index.html__
       </fieldset>
     </main>
 
-    <script src="angular-1.6.1.min.js"></script> 
+    <script src="angular-1.6.1.min.js"></script>
     <script src="app.module.js"></script>
     <script src="storage/storage.module.js"></script>
     <script src="storage/storage.service.js"></script>
@@ -136,7 +136,7 @@ __storage/storage.service__
   angular
     .module('storage')
     .factory('storage', ['$window', storageService]);
-  
+
   function storageService($window) {
 
     /********************************
@@ -154,7 +154,7 @@ __demo.controller.js__
   angular
     .module('app')
     .controller('DemoController', ['$scope', 'storage', DemoController]);
-  
+
   function DemoController($scope, storage) {
     $scope.storageType = 'local';
     $scope.localKeyValues = storage.for('local').getAll();
@@ -163,7 +163,7 @@ __demo.controller.js__
     $scope.saveKeyValuePair = function () {
       var vault = storage.for($scope.storageType);
       vault.set($scope.key, $scope.value);
-      
+
       $scope.localKeyValues = storage.for('local').getAll();
       $scope.sessionKeyValues = storage.for('session').getAll();
     };

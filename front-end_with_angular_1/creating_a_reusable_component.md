@@ -7,7 +7,7 @@
 
 # Begin the body of the assignment below the final `---`.
 
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoxMzA0NiwiY29udGVudF90eXBlIjoiQXNzaWdubWVudCJ9.K_8jaDhlfT4eCFZqXo89Vm6eqLJvvJlfBHSOXbDqXxc
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyNzUzMiwiY29udGVudF90eXBlIjoiTGVzc29uIn0.AkgVeFlQ5qAFOwSzzdAjPu-zVYUG-8bJy-kzHQGCiI8
 
 # Everything below this line can be edited.
 title: >-

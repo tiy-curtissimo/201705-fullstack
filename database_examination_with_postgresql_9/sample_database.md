@@ -7,9 +7,8 @@
 
 # Begin the body of the lesson below the final `---`.
 
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyMzk0OSwiY29udGVudF90eXBlIjoiTGVzc29uIn0.vscZrl5yJH3wtDT1pdN7NEk1u_nebKYywjBewknSvU0
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyNzUzNSwiY29udGVudF90eXBlIjoiTGVzc29uIn0.MxRl_NE5zY1APvKjn_VaalqvQNh1pcLqqUcFEp6woVw
 
-# Everything below this line can be edited.
 title: >-
   Sample Database
 description: >-

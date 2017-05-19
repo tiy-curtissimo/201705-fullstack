@@ -7,7 +7,7 @@
 
 # Begin the body of the lesson below the final `---`.
 
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyMTk3MCwiY29udGVudF90eXBlIjoiTGVzc29uIn0.gRLiyIouuPv_9z5tPOzXvqI0D5BIZ3R6hBP-2-dCj6Y
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZW50X2lkIjoyNzUyOSwiY29udGVudF90eXBlIjoiTGVzc29uIn0.F8mtMcB2XrZzsWJDjVe-0FTIIDEtZRlh9WhuTZmZmzQ
 
 # Everything below this line can be edited.
 title: >-
@@ -27,7 +27,7 @@ When Angular 1 premiered, it represented the most promising and complete
 client-side framework for creating complex browser-based applications. The fact
 that it came from Google made it an even more appealing choice for developers
 and software development companies that relied on the thought that it would
-present a stable platform on which to build Web applications for years to come. 
+present a stable platform on which to build Web applications for years to come.
 
 In September 2014, the Angular team announced that Angular 2 would not only
 represent a complete rewrite of the framework, but that they had no intent on
