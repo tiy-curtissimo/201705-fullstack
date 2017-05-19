@@ -125,3 +125,4 @@ function ExampleController($rootElement) {
   // Do something clever with the root element...
 }
 ```
+
