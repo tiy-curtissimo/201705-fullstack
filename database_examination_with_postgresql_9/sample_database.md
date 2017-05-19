@@ -22,3 +22,4 @@ use during our exploration of databases.
 
 [Sample DVD Rental Database](http://bit.ly/2l0hg6P) shamelessly stolen from
 http://www.postgresqltutorial.com.
+
