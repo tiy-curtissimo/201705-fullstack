@@ -152,3 +152,4 @@ component, to pass in data and get events, we need to examine "bindings" which
 we'll cover in the next lesson.
 
 [^1]: [https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+
