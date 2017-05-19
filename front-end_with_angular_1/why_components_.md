@@ -82,3 +82,4 @@ flagship product at the time, their version 1.
 [^1]: [https://facebook.github.io/react/](https://facebook.github.io/react/)
 [^2]: [http://knockoutjs.com/](http://knockoutjs.com/)
 [^3]: [https://www.webcomponents.org/](https://www.webcomponents.org/)
+
