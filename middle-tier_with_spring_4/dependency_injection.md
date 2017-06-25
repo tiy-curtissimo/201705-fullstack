@@ -224,3 +224,6 @@ UserController controller = (UserController) container.Resolve(UserController.cl
 ```
 And, thats how and wy of DI.
 
+[callout-info]
+Here's a callout.
+[/callout-info]
