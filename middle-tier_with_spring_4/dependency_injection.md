@@ -222,23 +222,4 @@ container.Register(Logger.class, new FileLogger("/var/log/app.log"));
 // Create controller instances
 UserController controller = (UserController) container.Resolve(UserController.class);
 ```
-And, thats how and wy of DI.
-
-```html
-<header class="app-bar">
-  <h1 class="app-bar-title">Timely</h1>
-  <div class="app-bar-spacer"></div>
-  <form method="post" action="/logout">
-    <!-- <input type="hidden" value="delete" name="_method"> -->
-    <input type="hidden" name="{{ _csrf.parameterName }}" value="{{ _csrf.token }}">
-    <button class="button">Sign out</button>
-  </form>
-</header>
-<nav class="tabs">
-  <ul class="tabs-list">
-    <li class="tabs-item tabs-item-selected"><a href="/">Today's Work</a></li>
-    <li class="tabs-item"><a href="/clients">Clients</a></li>
-    <li class="tabs-item"><a href="/report">Report</a></li>
-  </ul>
-</nav>
-```
+And, thats how and why of DI.
