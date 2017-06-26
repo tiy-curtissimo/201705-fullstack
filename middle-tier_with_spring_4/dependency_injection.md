@@ -224,8 +224,10 @@ UserController controller = (UserController) container.Resolve(UserController.cl
 ```
 And, thats how and wy of DI.
 
-[objective-callout]
+[objective2-callout]
+You're going to learn
+
 - learn
 - learn
 - learn
-[/objective-callout]
+[/objective2-callout]
