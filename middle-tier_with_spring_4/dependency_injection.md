@@ -224,6 +224,29 @@ UserController controller = (UserController) container.Resolve(UserController.cl
 ```
 And, thats how and wy of DI.
 
-[callout-info]
-Here's a callout.
-[/callout-info]
+[callout-steps]
+## Create and Register the Files for the Component
+### Step 1: Create the files
+You decide to name your component `login-card` and
+create the subdirectory and files accordingly.
+
+![timely - the login-card files](https://tiy-corp-train.github.io/newline-media/learning-angular-with-timely/create-login-card-files.png)
+
+### Step 2: Add the component file to the Web page
+You open the `session/login.html` file, again, and
+add your newly-created file to the list of `<script>`
+tags at the bottom fo the file.
+
+```html
+  <script src="/app/app.module.js"></script>
+  <script src="/app/registration-cta/registration-cta.component.js"></script>
+
+  <!-- The new login card component! -->
+  <script src="/app/login-card/login-card.component.js"></script>
+</body>
+
+```
+
+### Step 3 Define and register the angular component
+In `login-card.component.js`, you write the JavaScript
+[/callout-steps]
