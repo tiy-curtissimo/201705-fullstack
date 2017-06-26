@@ -223,3 +223,9 @@ container.Register(Logger.class, new FileLogger("/var/log/app.log"));
 UserController controller = (UserController) container.Resolve(UserController.class);
 ```
 And, thats how and wy of DI.
+
+[objective-callout]
+- learn
+- learn
+- learn
+[/objective-callout]
