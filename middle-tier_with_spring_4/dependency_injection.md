@@ -225,6 +225,6 @@ UserController controller = (UserController) container.Resolve(UserController.cl
 And, thats how and wy of DI.
 
 [reveal]
-Take a look in the template `entries/index.html`.
+Take a look in the template <code>entries/index.html</code>.
 [/reveal]
 
