@@ -223,3 +223,7 @@ container.Register(Logger.class, new FileLogger("/var/log/app.log"));
 UserController controller = (UserController) container.Resolve(UserController.class);
 ```
 And, thats how and wy of DI.
+
+[reveal] Take a look in the template
+`entries/index.html`. [/reveal]
+
