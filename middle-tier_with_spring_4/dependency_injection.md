@@ -231,9 +231,33 @@ And, thats how and why of DI.
 }
 </style>
 [callout-cool]
-**You**: Hey, Alberto, I have a question.
+*You*: Hey, Alberto, I have a question.
 
-**Alberto**: What's up?
+*Alberto*: whats up?
 
-**You**: I wanted to know about nested states in ui-router.
+*You*: I wanted to know about nested states in
+ui-router.
+
+*Alberto*: yeah, no prob - like what?
+
+*You*: Like how to use them?
+
+*Alberto*: oh! ezpz! you create a nested state when
+you give it a name that is a dot-suffix of another
+state's name
+
+*Alberto*: say you have a state named 'book'
+
+*Alberto*: you can make a child state by naming it
+'book.shelf'
+
+*Alberto*: you can create another child state by
+naming it 'book.club'
+
+*Alberto*: ui-router will put the child states view
+into a ui-view in the template of the parent state
+
+*You*: Ok, so if I understand this correctly...
+
+*Alberto*: notime! archer just started! chat soon!
 [/callout-cool]
