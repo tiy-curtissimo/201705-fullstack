@@ -225,7 +225,9 @@ UserController controller = (UserController) container.Resolve(UserController.cl
 And, thats how and why of DI.
 
 [callout-cool]
-**You**: Hey, Alberto, I have a question. \
-**Alberto**: What's up? \
+**You**: Hey, Alberto, I have a question.
+
+**Alberto**: What's up?
+
 **You**: I wanted to know about nested states in ui-router.
 [/callout-cool]
