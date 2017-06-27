@@ -224,6 +224,12 @@ UserController controller = (UserController) container.Resolve(UserController.cl
 ```
 And, thats how and why of DI.
 
+<style>
+.callout-cool::before,
+.callout-cool::after {
+  background-image: none !important;
+}
+</style>
 [callout-cool]
 **You**: Hey, Alberto, I have a question.
 
